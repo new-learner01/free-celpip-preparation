@@ -34,7 +34,8 @@ export const CELPIP_PROMPTS: PromptTemplates = {
       ],
       [
         "user",
-        `Topic: ${topic && topic.trim() !== '' ? topic : 'Choose any realistic, everyday Canadian situation or civic topic suitable for an official CELPIP exam'}`
+        `
+        Topic: {topic}
 
 Please create:
 1. A title for the passage (5-8 words)
@@ -121,7 +122,7 @@ NOTE: use your knowledge of CELPIP reading test format to generate the passage a
       ],
       [
         "user",
-        `Topic: ${topic && topic.trim() !== '' ? topic : 'Choose any realistic, everyday Canadian situation or civic topic suitable for an official CELPIP exam'}`
+        `Topic: {topic}
 
 Please create:
 1. A title for the email (5-8 words)
@@ -199,7 +200,7 @@ Ensure the email content flows naturally and the blanks test comprehension of th
       ],
       [
         "user",
-        `Topic: ${topic && topic.trim() !== '' ? topic : 'Choose any realistic, everyday Canadian situation or civic topic suitable for an official CELPIP exam'}`
+        `Topic: {topic}
 
 Create CELPIP Part 3 Reading for Information content following this exact format:
 
@@ -267,7 +268,7 @@ IMPORTANT:
       ],
       [
         "user",
-        `Topic: ${topic && topic.trim() !== '' ? topic : 'Choose any realistic, everyday Canadian situation or civic topic suitable for an official CELPIP exam'}`
+        `Topic: {topic}
 
 Please create:
 1. A title for the main article (5-8 words)
