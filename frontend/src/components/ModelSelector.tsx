@@ -31,8 +31,7 @@ const PROVIDER_INFO = {
   },
   google: {
     name: "Google",
-    models: ["
-      -flash", "gemini-2.o-pro"],
+    models: ["gemini-2.0-flash", "gemini-2.o-pro"],
     description: "Google's latest generative AI models",
     envVar: "VITE_GOOGLE_API_KEY",
   },
